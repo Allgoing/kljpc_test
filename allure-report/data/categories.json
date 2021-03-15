@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 200 == 404\n  +200\n  -404",
+      "children" : [ {
+        "name" : "casename",
+        "uid" : "1f9557d6554dddae",
+        "parentUid" : "9a6cf8b33e140ca0b3f20cecda63b4d7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1615779241381,
+          "stop" : 1615779242898,
+          "duration" : 1517
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'module': '宠物管理', 'id': 'pet_query_001', 'casename': '根据id查询宠物', 'url': 'https://petstore.swagger.io/v2/pet/2', 'method': 'get', 'params': '', 'headers': '{\"Accept\":\"application/json\"}', 'body': '', 'bodytype': '', 'status_code': 200.0, 'message': '{\\n  \"id\": 2,\\n  \"category\": {\\n    \"id\": 1,\\n    \"name\": \"string\"\\n  },\\n  \"name\": \"Dog\",\\n  \"photoUrls\": [\\n    \"string\"\\n  ],\\n  \"tags\": [\\n    {\\n      \"id\": 0,\\n      \"name\": \"string\"\\n    }\\n  ],\\n  \"status\": \"sold\"\\n}', 'result': '', 'tester': ''}", "'casename'" ]
+      } ],
+      "uid" : "9a6cf8b33e140ca0b3f20cecda63b4d7"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 25 (char 24)",
+      "children" : [ {
+        "name" : "添加一个宠物",
+        "uid" : "30084ae829f4fab4",
+        "parentUid" : "499f57d1e5449b040efb8f6ba03344e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1615779254770,
+          "stop" : 1615779254771,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'module': '宠物管理', 'id': 'pet_add_002', 'casename': '添加一个宠物', 'url': 'https://petstore.swagger.io/v2/pet', 'method': 'post', 'params': '', 'headers': '{\"Accept\":\"application/json\"}', 'body': '{\"text\":\"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n<Pet>\\n <id>1009</id>\\n <Category>\\n  <id>0</id>\\n  <name>string</name>\\n </Category>\\n <name>doggie</name>\\n <photoUrl>\"}', 'bodytype': 'application/xml', 'status_code': 200.0, 'message': '{\\n  \"id\": 1009,\\n  \"name\": \"doggie\",\\n  \"photoUrls\": [],\\n  \"tags\": [],\\n  \"status\": \"available\"\\n}', 'result': '', 'tester': ''}", "'添加一个宠物'" ]
+      } ],
+      "uid" : "499f57d1e5449b040efb8f6ba03344e1"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

@@ -1,0 +1,23 @@
+fitness:亲子，qinzi
+
+CREATE TABLE `case_interface` (
+  `id` int(2) NOT NULL AUTO_INCREMENT,
+  `name_interface` varchar(128) NOT NULL COMMENT '接口名称',
+  `exe_level` int(2) DEFAULT NULL COMMENT '执行优先级，0代表BVT',
+  `exe_mode` varchar(4) DEFAULT NULL COMMENT '执行方式：post，get，默认是post方式',
+  `url_interface` varchar(128) DEFAULT NULL COMMENT '接口地址:如果以http开头的则直接使用改地址，否则拼接上不同环境的ip前缀作为接口地址',
+  `header_interface` text COMMENT '接口请求的头文件，有则使用，无则调用配置文件',
+  `params_interface` varchar(256) DEFAULT NULL COMMENT '接口请求的参数',
+  `result_interface` text COMMENT '接口返回结果',
+  `code_to_compare` varchar(16) DEFAULT NULL COMMENT '待比较的code值，用户自定义比较值，例如returncode和code等,默认returncode',
+  `code_actual` varchar(16) DEFAULT NULL COMMENT '接口实际code实际返回值',
+  `code_expect` varchar(16) DEFAULT NULL COMMENT '接口预期code返回值',
+  `result_code_compare` int(2) DEFAULT NULL COMMENT 'code比较结果，0-pass，1-fail，2-无待比较参数，3-比较出错，4-返回包不合法，5-系统异常'
+  `params_to_compare` varchar(256) DEFAULT NULL COMMENT '接口比较参数集合，用于比较参数完整性',
+  `params_actual` text COMMENT '接口实际返回参数',
+  `result_params_compare` int(2) DEFAULT NULL COMMENT 'code比较结果，0-pass，1-fail，2-获取参数集错误：去重错误，5-系统异常',
+  `case_status` int(2) DEFAULT '0' COMMENT '用例状态 0-有效，1-无效',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='接口用例表';

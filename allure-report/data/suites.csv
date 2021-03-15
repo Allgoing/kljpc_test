@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Mar 15 11:34:07 CST 2021","Mon Mar 15 11:34:08 CST 2021","1104","tests","test_cases","TestCase","","","根据状态查询宠物",""
+"broken","Mon Mar 15 11:34:14 CST 2021","Mon Mar 15 11:34:14 CST 2021","1","tests","test_cases","TestCase","","","添加一个宠物",""
+"passed","Mon Mar 15 11:34:05 CST 2021","Mon Mar 15 11:34:07 CST 2021","2047","tests","test_cases","TestCase","","","根据id查询宠物",""
+"passed","Mon Mar 15 11:34:02 CST 2021","Mon Mar 15 11:34:05 CST 2021","2630","tests","test_cases","TestCase","","","根据id查询宠物",""
+"failed","Mon Mar 15 11:34:01 CST 2021","Mon Mar 15 11:34:02 CST 2021","1517","tests","test_cases","TestCase","","","casename",""
+"passed","Mon Mar 15 11:34:12 CST 2021","Mon Mar 15 11:34:14 CST 2021","2052","tests","test_cases","TestCase","","","根据状态查询宠物",""
+"passed","Mon Mar 15 11:34:08 CST 2021","Mon Mar 15 11:34:12 CST 2021","3960","tests","test_cases","TestCase","","","根据状态查询宠物",""

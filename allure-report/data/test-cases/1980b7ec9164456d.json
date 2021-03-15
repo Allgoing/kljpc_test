@@ -1,0 +1,66 @@
+{
+  "uid" : "1980b7ec9164456d",
+  "name" : "根据状态查询宠物",
+  "fullName" : "tests.test_cases.TestCase#test_case001",
+  "historyId" : "7806e14c7aedf1892ae74c77cb001312",
+  "time" : {
+    "start" : 1615779103423,
+    "stop" : 1615779104570,
+    "duration" : 1147
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "宠物店"
+  }, {
+    "name" : "story",
+    "value" : "宠物管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_cases"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "bogon"
+  }, {
+    "name" : "thread",
+    "value" : "30604-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cases"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "{'module': '宠物管理', 'id': 'pet_query_005', 'casename': '根据状态查询宠物', 'url': 'https://petstore.swagger.io/v2/pet/findByStatus', 'method': 'get', 'params': '{\"status\":\"sold\"}', 'headers': '{\"Accept\":\"application/json\"}', 'body': '', 'bodytype': '', 'status_code': 200.0, 'message': '[\\n  {\\n    \"id\": 222709,\\n    \"category\": {\\n      \"id\": 268576,\\n      \"name\": \"dog\"\\n    },\\n    \"name\": \"Elwanek\",\\n    \"photoUrls\": [\\n      \"/Users/a/Documents/Sel/workspace/PetStoreAPITesting1\",\\n      \"/Users/a/Documents/Sel/workspace/PetStoreAPITesting2\"\\n    ],\\n    \"tags\": [\\n      {\\n        \"id\": 192734,\\n        \"name\": \"for kids\"\\n      },\\n      {\\n        \"id\": 834101,\\n        \"name\": \"small\"\\n      }\\n    ],\\n    \"status\": \"sold\"\\n  },\\n  {\\n    \"id\": 111675,\\n    \"category\": {\\n      \"id\": 914002,\\n      \"name\": \"\"\\n    },\\n    \"name\": \"Elwanek2\",\\n    \"photoUrls\": [\\n      \"/Users/a/Documents/Sel/workspace/PetStoreAPITesting2 \"\\n    ],\\n    \"tags\": [],\\n    \"status\": \"sold\"\\n  },\\n  {\\n    \"id\": 9222895647106168000,\\n    \"category\": {\\n      \"id\": 313,\\n      \"name\": \"nb8qAw-lL2OZnQVp\"\\n    },\\n    \"name\": \"Otussie\",\\n    \"photoUrls\": [\\n      \"string\"\\n    ],\\n    \"tags\": [\\n      {\\n        \"id\": 967,\\n        \"name\": \"zAVW-cUUysv3AHkh\"\\n      }\\n    ],\\n    \"status\": \"sold\"\\n  }\\n]', 'result': '', 'tester': ''}"
+  }, {
+    "name" : "title",
+    "value" : "'根据状态查询宠物'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1980b7ec9164456d.json",
+  "parameterValues" : [ "{'module': '宠物管理', 'id': 'pet_query_005', 'casename': '根据状态查询宠物', 'url': 'https://petstore.swagger.io/v2/pet/findByStatus', 'method': 'get', 'params': '{\"status\":\"sold\"}', 'headers': '{\"Accept\":\"application/json\"}', 'body': '', 'bodytype': '', 'status_code': 200.0, 'message': '[\\n  {\\n    \"id\": 222709,\\n    \"category\": {\\n      \"id\": 268576,\\n      \"name\": \"dog\"\\n    },\\n    \"name\": \"Elwanek\",\\n    \"photoUrls\": [\\n      \"/Users/a/Documents/Sel/workspace/PetStoreAPITesting1\",\\n      \"/Users/a/Documents/Sel/workspace/PetStoreAPITesting2\"\\n    ],\\n    \"tags\": [\\n      {\\n        \"id\": 192734,\\n        \"name\": \"for kids\"\\n      },\\n      {\\n        \"id\": 834101,\\n        \"name\": \"small\"\\n      }\\n    ],\\n    \"status\": \"sold\"\\n  },\\n  {\\n    \"id\": 111675,\\n    \"category\": {\\n      \"id\": 914002,\\n      \"name\": \"\"\\n    },\\n    \"name\": \"Elwanek2\",\\n    \"photoUrls\": [\\n      \"/Users/a/Documents/Sel/workspace/PetStoreAPITesting2 \"\\n    ],\\n    \"tags\": [],\\n    \"status\": \"sold\"\\n  },\\n  {\\n    \"id\": 9222895647106168000,\\n    \"category\": {\\n      \"id\": 313,\\n      \"name\": \"nb8qAw-lL2OZnQVp\"\\n    },\\n    \"name\": \"Otussie\",\\n    \"photoUrls\": [\\n      \"string\"\\n    ],\\n    \"tags\": [\\n      {\\n        \"id\": 967,\\n        \"name\": \"zAVW-cUUysv3AHkh\"\\n      }\\n    ],\\n    \"status\": \"sold\"\\n  }\\n]', 'result': '', 'tester': ''}", "'根据状态查询宠物'" ]
+}

@@ -1,0 +1,68 @@
+{
+  "uid" : "da516b297f883112",
+  "name" : "casename",
+  "fullName" : "tests.test_cases.TestCase#test_case001",
+  "historyId" : "7693a5d8a7db321ad34ce8e6853e107d",
+  "time" : {
+    "start" : 1615779094956,
+    "stop" : 1615779098830,
+    "duration" : 3874
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 200 == 404\n  +200\n  -404",
+  "statusTrace" : "self = <kljpc.tests.test_cases.TestCase object at 0x10e16df28>\ncases = {'body': '', 'bodytype': '', 'casename': '根据id查询宠物', 'headers': '{\"Accept\":\"application/json\"}', ...}\ntitle = 'casename'\n\n    @allure.feature('宠物店')\n    @allure.story('宠物管理')\n    @allure.title('{title}')\n    @pytest.mark.parametrize('cases, title', casedata)\n    def test_case001(self, cases, title):\n        # print(len(cases))\n        # cases = cases[3]\n        # print(cases[Case.URL])\n        # print(cases[Case.BODY])\n        client = HttpClient(url=cases[Case.URL], method=cases[Case.METHOD], bodytype=cases[Case.BODYTYPE],\n                            params=cases[Case.PARAMS])\n        client.headers = json.loads(cases[Case.HEADERS])\n        client.set_body(cases[Case.BODY])\n        client.send()\n    \n>       assert int(cases[Case.STATUS_CODE]) == client.status_code\nE       assert 200 == 404\nE         +200\nE         -404\n\ntests/test_cases.py:30: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "宠物店"
+  }, {
+    "name" : "story",
+    "value" : "宠物管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_cases"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "bogon"
+  }, {
+    "name" : "thread",
+    "value" : "30604-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cases"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "{'module': '宠物管理', 'id': 'pet_query_001', 'casename': '根据id查询宠物', 'url': 'https://petstore.swagger.io/v2/pet/2', 'method': 'get', 'params': '', 'headers': '{\"Accept\":\"application/json\"}', 'body': '', 'bodytype': '', 'status_code': 200.0, 'message': '{\\n  \"id\": 2,\\n  \"category\": {\\n    \"id\": 1,\\n    \"name\": \"string\"\\n  },\\n  \"name\": \"Dog\",\\n  \"photoUrls\": [\\n    \"string\"\\n  ],\\n  \"tags\": [\\n    {\\n      \"id\": 0,\\n      \"name\": \"string\"\\n    }\\n  ],\\n  \"status\": \"sold\"\\n}', 'result': '', 'tester': ''}"
+  }, {
+    "name" : "title",
+    "value" : "'casename'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da516b297f883112.json",
+  "parameterValues" : [ "{'module': '宠物管理', 'id': 'pet_query_001', 'casename': '根据id查询宠物', 'url': 'https://petstore.swagger.io/v2/pet/2', 'method': 'get', 'params': '', 'headers': '{\"Accept\":\"application/json\"}', 'body': '', 'bodytype': '', 'status_code': 200.0, 'message': '{\\n  \"id\": 2,\\n  \"category\": {\\n    \"id\": 1,\\n    \"name\": \"string\"\\n  },\\n  \"name\": \"Dog\",\\n  \"photoUrls\": [\\n    \"string\"\\n  ],\\n  \"tags\": [\\n    {\\n      \"id\": 0,\\n      \"name\": \"string\"\\n    }\\n  ],\\n  \"status\": \"sold\"\\n}', 'result': '', 'tester': ''}", "'casename'" ]
+}
