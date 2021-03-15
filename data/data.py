@@ -14,7 +14,6 @@ def read_case_data(file=None, sheet_name='sheet1', row=0, col=0):
     list_data = list(zip(data, titles))
 
 
-    # sheet_names = excel.get_sheets()
     #
     # for sheet_name in sheet_names:
     #     sheet_list = excel.get_all_cells_list(sheet_name, key_row=row, start_col=col)
