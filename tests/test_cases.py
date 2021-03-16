@@ -15,6 +15,7 @@ class TestCase:
     @allure.feature('宠物店')
     @allure.story('宠物管理')
     @allure.title('{title}')
+    @allure.description('这是个描述')
     @pytest.mark.parametrize('cases, title', casedata)
     def test_case001(self, cases, title):
         # print(len(cases))
