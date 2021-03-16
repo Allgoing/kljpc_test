@@ -1,70 +1,70 @@
 [ {
-  "uid" : "1f9557d6554dddae",
+  "uid" : "fa8d0bb4ffe54fb8",
+  "name" : "根据状态查询宠物",
+  "time" : {
+    "start" : 1615859319302,
+    "stop" : 1615859322102,
+    "duration" : 2800
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d283784ea2a1583",
   "name" : "casename",
   "time" : {
-    "start" : 1615779241381,
-    "stop" : 1615779242898,
-    "duration" : 1517
+    "start" : 1615859314864,
+    "stop" : 1615859316046,
+    "duration" : 1182
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "72b101ca5cd8c812",
-  "name" : "根据id查询宠物",
-  "time" : {
-    "start" : 1615779245591,
-    "stop" : 1615779247638,
-    "duration" : 2047
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a0f1c604fba4aa3a",
-  "name" : "根据id查询宠物",
-  "time" : {
-    "start" : 1615779242957,
-    "stop" : 1615779245587,
-    "duration" : 2630
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "db6461f1822a9273",
+  "uid" : "af15feeebfb627fa",
   "name" : "根据状态查询宠物",
   "time" : {
-    "start" : 1615779252715,
-    "stop" : 1615779254767,
-    "duration" : 2052
+    "start" : 1615859323362,
+    "stop" : 1615859324497,
+    "duration" : 1135
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2c16dfa04f011889",
+  "uid" : "2055a20fc9a3bd6",
+  "name" : "根据id查询宠物",
+  "time" : {
+    "start" : 1615859318244,
+    "stop" : 1615859319295,
+    "duration" : 1051
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebc9aed8746b5f26",
   "name" : "根据状态查询宠物",
   "time" : {
-    "start" : 1615779248751,
-    "stop" : 1615779252711,
-    "duration" : 3960
+    "start" : 1615859322108,
+    "stop" : 1615859323357,
+    "duration" : 1249
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "30084ae829f4fab4",
+  "uid" : "c5a239f7ee977537",
   "name" : "添加一个宠物",
   "time" : {
-    "start" : 1615779254770,
-    "stop" : 1615779254771,
-    "duration" : 1
+    "start" : 1615859324501,
+    "stop" : 1615859324501,
+    "duration" : 0
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "d592fbeb66c6039c",
-  "name" : "根据状态查询宠物",
+  "uid" : "ebff2b28bad42527",
+  "name" : "根据id查询宠物",
   "time" : {
-    "start" : 1615779247644,
-    "stop" : 1615779248748,
-    "duration" : 1104
+    "start" : 1615859316108,
+    "stop" : 1615859318239,
+    "duration" : 2131
   },
   "status" : "passed",
   "severity" : "normal"

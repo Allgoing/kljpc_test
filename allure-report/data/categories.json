@@ -7,13 +7,13 @@
       "name" : "AssertionError: assert 200 == 404\n  +200\n  -404",
       "children" : [ {
         "name" : "casename",
-        "uid" : "1f9557d6554dddae",
+        "uid" : "9d283784ea2a1583",
         "parentUid" : "9a6cf8b33e140ca0b3f20cecda63b4d7",
         "status" : "failed",
         "time" : {
-          "start" : 1615779241381,
-          "stop" : 1615779242898,
-          "duration" : 1517
+          "start" : 1615859314864,
+          "stop" : 1615859316046,
+          "duration" : 1182
         },
         "flaky" : false,
         "newFailed" : false,
@@ -28,13 +28,13 @@
       "name" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 25 (char 24)",
       "children" : [ {
         "name" : "添加一个宠物",
-        "uid" : "30084ae829f4fab4",
+        "uid" : "c5a239f7ee977537",
         "parentUid" : "499f57d1e5449b040efb8f6ba03344e1",
         "status" : "broken",
         "time" : {
-          "start" : 1615779254770,
-          "stop" : 1615779254771,
-          "duration" : 1
+          "start" : 1615859324501,
+          "stop" : 1615859324501,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,

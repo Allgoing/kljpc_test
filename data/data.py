@@ -3,6 +3,14 @@ from common.excelParse import ExcelParser
 
 
 def read_case_data(file=None, sheet_name='sheet1', row=0, col=0):
+    '''
+    获取excel文档数据
+    :param file: 文件名
+    :param sheet_name: sheet名
+    :param row: 开始行
+    :param col: 开始列
+    :return:
+    '''
 
     if file:
         excel = ExcelParser(file)
@@ -10,7 +18,7 @@ def read_case_data(file=None, sheet_name='sheet1', row=0, col=0):
         excel = ExcelParser(r'/Users/work/kljTest/kljpc/data/testcases.xlsx')
 
     data = excel.get_all_cells(sheet_name, key_row=row, start_col=col)
-    titles = excel.get_cols(sheet_name,col_num=2)
+    titles = excel.get_cols(sheet_name, col_num=2)
     list_data = list(zip(data, titles))
 
 
