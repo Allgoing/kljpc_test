@@ -4,6 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+requests = "*"
+allure-pytest = "*"
+pytest-rerunfailures = "*"
+pytest = "*"
+xlrd = "*"
+xlwt = "*"
 
 [dev-packages]
 
