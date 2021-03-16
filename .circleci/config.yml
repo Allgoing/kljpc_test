@@ -1,21 +1,28 @@
-version: 2.1
 
+version: 2.1
+ 
 orbs:
   python: circleci/python@0.2.1
-
+ 
 jobs:
-  build-and-test:
+  klj-automated-tests:
     executor: python/default
     steps:
       - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
       - run:
-          command: ./manage.py test
+          command: |
+            pip install pipenv
+            pipenv install
+            pipenv run python main.py
           name: Test
-
+      - store_test_results:
+          path: ./report/
+ 
+      - store_artifacts:
+          path: ./report/
+          destination: reports
+ 
 workflows:
   main:
     jobs:
-      - build-and-test
+      - klj-automated-tests
