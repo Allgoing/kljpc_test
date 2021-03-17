@@ -58,8 +58,9 @@ class Case:
 
 
 if __name__ == '__main__':
-    a = read_case_data(sheet_name='sheet1')
-    print(len(a))
+    pass
+    # a = read_case_data(sheet_name='sheet1')
+    # print(len(a))
     # a = ExcelParser(r'/Users/work/kljTest/kljpc/data/testcases.xlsx')
     # print(a.get_cols(sheet='sheet1', col_num=2))
     # b = read_case_data(sheet_name='sheet1')
