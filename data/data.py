@@ -1,4 +1,6 @@
 # -- coding: utf-8 --
+import os
+
 from common.excelParse import ExcelParser
 
 
@@ -15,7 +17,8 @@ def read_case_data(file=None, sheet_name='sheet1', row=0, col=0):
     if file:
         excel = ExcelParser(file)
     else:
-        excel = ExcelParser(r'/Users/work/kljTest/kljpc/data/testcases.xlsx')
+        excel_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'testcases.xlsx')
+        excel = ExcelParser(excel_file_path)
 
     data = excel.get_all_cells(sheet_name, key_row=row, start_col=col)
     titles = excel.get_cols(sheet_name, col_num=2)
@@ -56,9 +59,14 @@ class Case:
 
 
 if __name__ == '__main__':
+    pass
     # a = read_case_data(sheet_name='sheet1')
     # print(len(a))
-    a = ExcelParser(r'/Users/work/kljTest/kljpc/data/testcases.xlsx')
+    # a = ExcelParser(r'/Users/work/kljTest/kljpc/data/testcases.xlsx')
     # print(a.get_cols(sheet='sheet1', col_num=2))
-    b = read_case_data(sheet_name='sheet1')
-    print(b[1])
+    # b = read_case_data(sheet_name='sheet1')
+    # print(b[1])
+    # abs_path = os.path.abspath(__file__)
+    # dir_name = os.path.dirname(abs_path)
+    # excel_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'testcases.xlsx')
+    # print(excel_file_path)
