@@ -8,7 +8,7 @@ requests = "*"
 allure-pytest = "*"
 pytest-rerunfailures = "*"
 pytest = "*"
-xlrd = "*"
+xlrd = "==1.2.0"
 xlwt = "*"
 
 [dev-packages]

@@ -24,7 +24,6 @@ def read_case_data(file=None, sheet_name='sheet1', row=0, col=0):
     titles = excel.get_cols(sheet_name, col_num=2)
     list_data = list(zip(data, titles))
 
-
     return list_data
 
 
@@ -59,9 +58,8 @@ class Case:
 
 
 if __name__ == '__main__':
-    pass
-    # a = read_case_data(sheet_name='sheet1')
-    # print(len(a))
+    a = read_case_data(sheet_name='sheet1')
+    print(len(a))
     # a = ExcelParser(r'/Users/work/kljTest/kljpc/data/testcases.xlsx')
     # print(a.get_cols(sheet='sheet1', col_num=2))
     # b = read_case_data(sheet_name='sheet1')
